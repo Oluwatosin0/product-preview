@@ -1,0 +1,154 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    overflow: hidden;
+    background-color:#f2ebe3;
+}
+
+.preview{
+    width: 100%;
+    height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.perfume{
+    width:250px;
+    height: 350px;
+    border-radius: 10px 0 0 10px;
+    margin: auto;
+}
+
+.small{
+    display: none;
+}
+
+.body{
+    width: 250px;
+    height:350px;
+    background-color: #ffffff;
+    float: right ;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+}
+
+#first{
+    font-size: 10px;
+    font-family: Montserrat; 
+    color: #7280a7;
+    letter-spacing:5px;  
+}
+
+h2{
+    font-size: 25px;
+    font-family: Fraunces;
+    font-weight: bolder;
+    padding-top: 8px;
+    padding-left: 5px;
+}
+
+#second{
+    font-size: 12px;
+    font-family: Montserrat; 
+    color: #7280a7;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+}
+
+.amount{
+    display: flex;
+    width: 200px;  
+}
+
+h2{
+    font-size: 25px;
+    font-family: Fraunces;
+    color: #3c8067;
+    font-weight: bolder;
+}
+
+.money{
+    font-size:10px;
+    padding: 20px;
+    font-family: Montserrat;
+    color: #7280a7;
+    text-decoration: line-through; 
+}
+
+.cart{
+    background-color: #3c8067;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.cart:hover {
+    background-color: #13382b;
+
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Montserrat;
+    padding-left: 8px;
+}
+
+@media screen and (max-width: 375px){
+    .container{
+        width: 100%;
+        height:100%;
+        position: absolute;
+        overflow: hidden;
+        background-color:#f2ebe3;
+        margin: auto;
+    }
+    .preview{
+        width: 60%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .perfume{
+        display: none;
+    }
+
+    .small{
+        display: inline-block;
+        width:250px;
+        height: 150px;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .body{
+        width: 250px;
+        height:300px;
+        background-color: #ffffff;
+        border-radius: 0 0 10px 10px;
+        margin-top: -8px;
+    }
+
+    .amount{
+        margin-top: -12px;
+    }
+
+    .cart{
+        margin-top: -20px;
+    }
+        
+}
